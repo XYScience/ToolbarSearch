@@ -66,7 +66,6 @@ toolbar.setNavigationOnClickListener(new View.OnClickListener() {
         <item name="queryBackground">@null</item>
 </style>
 ```     
-    
 参考    
 ---------------      
 https://juejin.im/post/591e5e528d6d810058b684c3
