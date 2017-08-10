@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--两种设置光标颜色方式-->
+        <item name="colorAccent">@android:color/white</item>
+        <!--<item name="autoCompleteTextViewStyle">@style/CursorColor</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="searchViewStyle">@style/CustomSearchView</item>
+        <!--两种设置光标颜色方式-->
+        <item name="colorAccent">@android:color/white</item>
+        <!--<item name="autoCompleteTextViewStyle">@style/CursorColor</item>-->
+    </style>
+
+    <!--自定义 SearchView ，针对 ToolbarTheme2 主题（搜索框内有下划线和放大镜图标）-->
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <!--修改搜索框提示文字-->
+        <item name="defaultQueryHint">请输入关键字</item>
+        <!--去除搜索框内左边的放大镜图标-->
+        <item name="searchHintIcon">@null</item>
+        <!--去除搜索框下划线-->
+        <item name="queryBackground">@null</item>
+    </style>
+
+    <!--光标颜色-->
+    <style name="CursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>
