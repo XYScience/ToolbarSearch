@@ -7,3 +7,20 @@
 /build
 /captures
 .externalNativeBuild
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+src/main/webapp/upload/
+Thumbs.db
